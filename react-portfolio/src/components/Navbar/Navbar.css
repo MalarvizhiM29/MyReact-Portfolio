@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+
+.navbar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #a3a5a5;
+  color: #333;
+  height: 4rem;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar .header-bg {
+  background: #f3f8fc;
+  transition: 0.5s;
+}
+
+.navbar .title {
+  font-size: 2.5rem;
+  font-family: "Jacques Francois Shadow", cursive;
+}
+
+.navbar .nav-menu {
+  display: flex;
+}
+
+.navbar .list {
+  padding: 0 3rem;
+}
+
+.navbar .link {
+  font-size: 1.15rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0 10px;
+}
+
+.navbar .link:after {
+  content: "";
+  position: absolute;
+  background-color: #082567;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.navbar .link:hover {
+  color: #555;
+}
+
+.navbar .link:hover:after {
+  width: 100%;
+}
+
+.navbar .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1040px) {
+  .navbar .nav-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #f3f8fc;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -3;
+    transition: 0.3s;
+    padding-top: 1rem;
+  }
+
+  .navbar .nav-menu.active {
+    left: 0%;
+  }
+
+  .navbar .nav-menu li {
+    padding: 1rem 0;
+  }
+
+  .navbar .nav-menu li a {
+    font-size: 1.8rem;
+  }
+
+  .navbar .hamburger {
+    display: initial;
+  }
+}

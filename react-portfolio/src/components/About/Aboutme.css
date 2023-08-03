@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+
+@import "animate.css";
+
+.about-page h1 {
+  border-radius: 2rem;
+  border: 2px solid #333;
+  box-shadow: 2px 5px #333;
+  font-size: 1.8rem;
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #333;
+  font-weight: 600;
+  width: 34%;
+  padding-left: 2rem;
+  background: #f3f8fc;
+}
+
+#about {
+  padding: 8rem 0 5rem 4rem;
+  height: 100vh;
+}
+
+.about-page .text-zone {
+  float: left;
+  padding: 6rem 3rem 8rem 2rem;
+  width: 49%;
+}
+
+.about-page .about-me {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.about-page .stage-cube-cont {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 10rem;
+  padding-bottom: 18rem;
+  margin-left: 0;
+  right: 0;
+  overflow: hidden;
+  float: right;
+}
+
+.about-page .cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+}
+
+.about-page .face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #082567;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0 #a3a5a5;
+}
+
+.face1 {
+  transform: translateZ(100px);
+}
+.face2 {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.face4 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.face6 {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1040px) {
+  .about-page {
+    margin-bottom: 25rem;
+  }
+
+  .about-page h1 {
+    width: 85%;
+  }
+
+  .about-page .text-zone {
+    padding-bottom: 1rem;
+  }
+
+  .container {
+    padding: 7rem 0;
+  }
+
+  .about-me {
+    font-size: 1rem;
+  }
+
+  .stage-cube-cont {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-page h1 {
+    width: 80%;
+  }
+
+  .container {
+    padding: 5rem 0rem;
+  }
+
+  .about-me {
+    font-size: 1rem;
+  }
+
+  .text-zone {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .stage-cube-cont {
+    width: 100%;
+  }
+}

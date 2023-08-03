@@ -1,0 +1,14 @@
+.main-content .project-heading {
+  border-radius: 2rem;
+  border: 3px solid #333;
+  box-shadow: 2px 5px #333;
+  font-size: 2.1rem;
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #333;
+  font-weight: 600;
+  width: 14%;
+  padding-left: 2rem;
+  background: #f3f8fc;
+  margin-bottom: 3rem;
+  margin-left: 12rem;
+}

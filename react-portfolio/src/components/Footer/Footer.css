@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+
+.footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h3 {
+  margin: 2rem 0 0 32rem;
+  font-size: 1.8rem;
+  font-family: "Jacques Francois Shadow", cursive;
+}
+
+.footer .content {
+  border-radius: 2rem;
+  width: 32%;
+  border: 3px solid #a3a5a5;
+  box-shadow: 5px 8px #a3a5a5;
+  margin: 2rem 32rem 2rem;
+  padding: 2rem;
+  /* background: #d2d1d1; */
+}
+
+.footer .box1 {
+  margin-bottom: 2rem;
+  height: 8rem;
+}
+
+.footer .flat-icon {
+  margin-left: 6rem;
+}
+
+.footer img {
+  margin: 1rem 1rem 0 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .fa-brands {
+  margin: 1rem;
+  color: #082567;
+}
+
+.footer .fa-brands:hover {
+  opacity: 0.8;
+  zoom: 90%;
+}

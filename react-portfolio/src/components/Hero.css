@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+
+.hero .mask {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero .bg-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
+
+.hero .mask::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  opacity: 0.3;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+}
+
+.hero .content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 30%;
+  text-align: left;
+}
+
+.hero .content h3 {
+  font-size: 2.5rem;
+  padding: 0.6rem 0 2rem;
+}
+
+.hero .content p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 2.5rem;
+}
+
+.hero .myname {
+  font-family: "Jacques Francois Shadow", cursive;
+  font-size: 3rem;
+  color: #082567;
+  width: 22ch;
+}
+
+.hero .fa-brands {
+  margin: 0 1rem 3rem 0;
+  color: #082567;
+}
+
+.hero .fa-brands:hover {
+  color: #333;
+  transform: scale(1.2);
+}
+
+.hero .button:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 1040px) {
+  .hero .content {
+    left: 40%;
+    bottom: 1px;
+  }
+
+  .hero .content h3 {
+    font-size: 2rem;
+  }
+
+  .hero .content p {
+    font-size: 2rem;
+  }
+
+  .hero .content h3 {
+    font-size: 2rem;
+    padding: 0.6rem 0 2rem;
+  }
+
+  .hero .content p {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .myname {
+    font-family: "Jacques Francois Shadow", cursive;
+    font-size: 3rem;
+  }
+
+  .fa-brands {
+    margin: 0 1rem 3rem 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero .content {
+    left: 40%;
+    bottom: 1px;
+  }
+
+  .hero .content h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero .content p {
+    font-size: 1.6rem;
+  }
+
+  .hero .content h3 {
+    font-size: 1.8rem;
+    padding: 0.6rem 0 0.2rem;
+  }
+
+  .hero .content p {
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .myname {
+    font-family: "Jacques Francois Shadow", cursive;
+    font-size: 1.8rem;
+  }
+
+  .fa-brands {
+    margin: 0 1rem 1.5rem 0;
+  }
+}

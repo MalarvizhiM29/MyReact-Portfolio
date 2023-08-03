@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+
+.cert {
+  margin: 3rem 14rem 5rem 14rem;
+}
+
+.certificate .certificate-heading {
+  border-radius: 2rem;
+  border: 3px solid #333;
+  box-shadow: 2px 5px #333;
+  font-size: 1.8rem;
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #333;
+  font-weight: 600;
+  width: 23%;
+  padding-left: 2rem;
+  background: #f3f8fc;
+  margin-bottom: 5rem;
+}
+
+.certificate .project-title {
+  color: #082567;
+  font-size: 1.2rem;
+}
+
+.certificate .certificate-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 3px solid #a3a5a5;
+  box-shadow: 2px 4px #a3a5a5;
+}
+
+.certificate .certificate-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  /* border: 1px solid #a3a5a5;
+  padding: 0.4rem;
+  border-radius: 2rem; */
+}
+
+.certificate img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.certificate .cert-img {
+  border: 3px solid #a3a5a5;
+  padding: 0.6rem;
+  border-radius: 30%;
+  margin-left: 1rem;
+}
+
+.certificate .pro-details {
+  padding: 1rem;
+}
+
+.certificate .pro-details p {
+  margin-bottom: 0.8rem;
+}
+
+.certificate .pro-btns .btn-new {
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  box-shadow: 1px 3px #333333;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #082567;
+  color: #ffffff;
+}
+
+.certificate .pro-btns .btn-new:hover {
+  opacity: 0.9;
+  background: #f5f8fa;
+  color: #333;
+  border: 2px solid #333;
+}

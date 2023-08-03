@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap");
+
+.portfolio {
+  height: 80vh;
+}
+
+.project-heading {
+  border-radius: 2rem;
+  border: 3px solid #333;
+  box-shadow: 2px 5px #333;
+  font-size: 1.8rem;
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #333;
+  font-weight: 600;
+  width: 12%;
+  padding-left: 2rem;
+  background: #f3f8fc;
+  margin-bottom: 3rem;
+  margin-left: 6rem;
+}
+
+.portfolio .project-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding-top: 1rem;
+  padding-bottom: 12rem;
+}
+
+.portfolio .project-card {
+  background: #ffffff;
+  padding: 1.5rem 5rem;
+  border-radius: 2rem;
+  border: 3px solid #a3a5a5;
+  box-shadow: 5px 8px #a3a5a5;
+}
+
+.portfolio .project-card img {
+  height: 150px;
+  width: 200px;
+  padding: 0.6rem;
+  border: 3px solid #a3a5a5;
+  border-radius: 2rem;
+}
+
+.portfolio .project-card img:hover {
+  opacity: 0.5;
+}
+
+.portfolio .project-title {
+  color: #082770;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+}
+
+.portfolio .pro-details p {
+  padding-bottom: 1rem;
+  font-size: 0.96rem;
+  text-align: justify;
+}
+
+.portfolio .pro-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .pro-btns .btn-new {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  box-shadow: 1px 3px #333333;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #082567;
+  color: #ffffff;
+}
+
+.portfolio .pro-btns .btn-new:hover {
+  opacity: 0.9;
+  background: #f5f8fa;
+  color: #333;
+  border: 2px solid #333;
+}
+
+@media screen and (max-width: 740px) {
+  .project-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

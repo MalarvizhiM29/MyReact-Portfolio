@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap");
+
+.myskill-container {
+  height: 100vh;
+}
+
+.myskill h1 {
+  border-radius: 2rem;
+  border: 2px solid #333;
+  box-shadow: 2px 5px #333;
+  font-size: 1.8rem;
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #333;
+  font-weight: 600;
+  width: 13%;
+  padding-left: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 6rem;
+  background: #f3f8fc;
+}
+
+.container-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myskill .card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px 4rem 20px 3rem;
+  margin: 0 10px;
+  border: 2px solid #a3a5a5;
+  box-shadow: 4px 6px #a3a5a5;
+}
+
+.myskill .card:hover {
+  opacity: 0.8;
+}
+
+.myskill h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid #a3a5a5;
+  box-shadow: 2px 4px #a3a5a5;
+  border-radius: 3rem;
+}
+
+.myskill ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.myskill img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.myskill li {
+  padding: 1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.myskill span {
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1040px) {
+  .myskill {
+    margin-top: 10rem;
+    height: 340vh;
+    margin-bottom: 5rem;
+  }
+  .myskill h1 {
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .myskill .container-skill {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .myskill .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .myskill {
+    margin-top: 32rem;
+  }
+  .myskill h1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
